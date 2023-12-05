@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="login-container">
+        <!-- <form action=" " method="post">
+            <h2>log in</h2>
+            <input type="text" name="username" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="pass" placeholder="Password" required>
+            <a href="#"><button class="register-btn">log in<i class="fas fa-sign-in-alt"></i></button></a> 
+        </form> -->
+
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group form-inline">
+                <legend class="border-bottom mb-4">Ulgama Giriň</legend>
+                <div class="form-group form-inline">
+                    {{ form.email.label(class="form-control-label form-inline") }}
+                    {% if form.email.errors %}
+                        {{ form.email(class="form-control form-control-lg is-invalid form-inline") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-group form-inline">
+                    {{ form.password.label(class="form-control-label form-inline") }}
+                    {% if form.password.errors %}
+                        {{ form.password(class="form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.password(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-check form-inline">
+                    {{ form.remember(class="form-inline form-check") }}
+                    {{ form.remember.label(class="form-check-label") }}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+            <small class="text-muted ml-2">
+                <a href="#">Açar sözi unutdyňyzmy?</a>
+            </small>
+        </form>
+    </div>
+{% endblock%}

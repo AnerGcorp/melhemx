@@ -1,0 +1,1102 @@
+@import "_global";
+
+/* Home Page*/
+header .header-container {
+  position: relative;
+  width: 100%;
+  background-image: url(../Images/header_img.jpg);
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bg-pan-bottom 2s both;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+  }
+
+  .content {
+    margin: 130px 150px 70px 150px;
+    z-index: 1;
+
+    h1 {
+      color: $fourthcolor;
+      font-size: 75px;
+      font-family: "regular";
+      text-transform: capitalize;
+      margin-top: 55px;
+
+      span {
+        font-family: "bold";
+        text-transform: capitalize;
+      }
+    }
+
+    p {
+      width: 75%;
+      margin: 50px 0px;
+      font-size: 18px;
+      font-family: "regular";
+      color: $fourthcolor;
+    }
+
+    a.discover-btn {
+      text-decoration: none;
+      color: $fourthcolor;
+      background-color: none;
+      border: 2px solid $fourthcolor;
+      border-radius: 10px;
+      padding: 10px 60px;
+      font-family: "semibold";
+      text-transform: capitalize;
+      font-size: 20px;
+
+      &:hover {
+        background-color: $fourthcolor;
+        color: $primarycolor;
+      }
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.4);
+      padding: 60px 20px;
+      margin-top: 30px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+      flex-direction: column;
+
+      h2 {
+        font-size: 28px;
+        font-family: "bold";
+        color: $thirdcolor;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      input,
+      select {
+        width: 95%;
+        background-color: rgba(255, 255, 255, 0.7);
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin: 10px auto;
+        outline: none;
+      }
+      button[type="submit"] {
+        text-align: center;
+        margin: 30px auto;
+        background: rgb(0, 172, 193);
+        background: linear-gradient(
+          90deg,
+          rgba(0, 172, 193, 1) 0%,
+          rgba(0, 77, 131, 1) 100%
+        );
+        color: $fourthcolor;
+        font-family: "bold";
+        font-size: 16px;
+        padding: 12px 80px;
+        border-radius: 25px;
+        text-transform: capitalize;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+}
+
+main {
+  section.doctors {
+    text-align: center;
+    margin: 50px auto;
+    h1 {
+      color: $primarycolor;
+      font-family: "bold";
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: $thirdcolor;
+      font-family: "bold";
+      font-size: 45px;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/*sign up & login Page*/
+main {
+  .signup-container,
+  .login-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/register_bg.jpg);
+    background-size: cover;
+    overflow: hidden;
+    animation: bg-pan-bottom 2s both;
+
+    form {
+      width: 32%;
+      margin: 120px auto;
+      padding: 40px;
+      background-color: rgba(0, 172, 193, 0.6);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+      flex-direction: column;
+
+      h2 {
+        font-size: 28px;
+        font-family: "bold";
+        color: $thirdcolor;
+        text-align: center;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+      }
+
+      h3 {
+        position: relative;
+        font-size: 18px;
+        font-family: "semibold";
+        color: $thirdcolor;
+        text-align: center;
+        text-transform: capitalize;
+        margin: 10px auto;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 10px;
+          width: 150px;
+          height: 1.5px;
+          background-color: $thirdcolor;
+        }
+
+        &::before {
+          left: 80px;
+          margin-right: 10px;
+        }
+        &::after {
+          right: 80px;
+        }
+      }
+
+      input {
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin: 10px auto;
+        outline: none;
+      }
+
+      .social-btn {
+        margin: 8px auto;
+
+        a {
+          text-decoration: none;
+          margin-right: 10px;
+
+          i {
+            font-size: 15px;
+            color: $primarycolor;
+            background-color: $fourthcolor;
+            padding: 20px;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+
+        button.register-btn {
+          width: 100%;
+          background-color: $fourthcolor;
+          text-align: center;
+          margin: 20px auto;
+          color: $primarycolor;
+          font-family: "bold";
+          font-size: 19px;
+          padding: 13px 80px;
+          border-radius: 30px;
+          text-transform: capitalize;
+          text-align: center;
+          border: none;
+          outline: none;
+
+          i {
+            margin-left: 5px;
+            margin-top: 3px;
+            color: $primarycolor;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Contact Us*/
+header .contactus-container {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  background: url(../Images/contactus_img.jpg);
+  overflow: hidden;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "bold";
+    color: $fourthcolor;
+    text-transform: capitalize;
+    font-family: "bold";
+    z-index: 1;
+  }
+}
+main .contactus-content {
+  .row {
+    width: 95%;
+    margin: 50px auto;
+  }
+
+  form {
+    width: 90%;
+    margin: 35px auto;
+    padding: 30px;
+    border: 2px solid $primarycolor;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 28px;
+      font-family: "bold";
+      color: $thirdcolor;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+
+      span {
+        color: $primarycolor;
+      }
+    }
+    input,
+    textarea {
+      width: 90%;
+      border: none;
+      margin: 18px auto;
+      border-bottom: 1px solid $primarycolor;
+      outline: none;
+      background: none;
+    }
+    input[type="submit"] {
+      width: 60%;
+      text-align: center;
+      margin: 30px auto;
+      background: rgb(0, 172, 193);
+      background: linear-gradient(
+        90deg,
+        rgba(0, 172, 193, 1) 0%,
+        rgba(0, 77, 131, 1) 50%,
+        rgba(0, 172, 193, 1) 100%
+      );
+      color: $fourthcolor;
+      font-family: "bold";
+      font-size: 15px;
+      padding: 15px 80px;
+      border-radius: 25px;
+      text-transform: capitalize;
+    }
+  }
+  .col-md-5 {
+    margin: 15px auto;
+
+    .box {
+      width: 90%;
+      margin: 60px auto;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 95%;
+        bottom: -15px;
+        border: 1px;
+        border-style: dashed;
+        border-color: $primarycolor;
+      }
+
+      .box-icon i {
+        font-size: 18px;
+        color: $primarycolor;
+        border: 2px solid $primarycolor;
+        padding: 15px 17px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+      .box-content {
+        h4 {
+          text-transform: capitalize;
+          font-family: "semibold";
+          font-size: 18px;
+          color: $thirdcolor;
+          margin-bottom: 15px;
+        }
+        p {
+          a {
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: "regular";
+            font-size: 16px;
+            color: $fifthcolor;
+          }
+          text-transform: capitalize;
+          font-family: "regular";
+          font-size: 16px;
+          color: $fifthcolor;
+        }
+      }
+    }
+  }
+}
+
+/* Doctors*/
+header .doctors-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: url(../Images/doctors_bg.jpg);
+  overflow: hidden;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: "bold";
+    color: $fourthcolor;
+    text-transform: capitalize;
+    margin-top: 30px;
+    z-index: 1;
+    i {
+      margin-right: 15px;
+    }
+  }
+  .add-doctor-btn {
+    text-decoration: none;
+    z-index: 1;
+    text-align: center;
+    outline: none;
+    margin: 10px auto;
+    background: $primarycolor;
+    color: $fourthcolor;
+    border: none;
+    cursor: pointer;
+    font-family: "semibold";
+    font-size: 16px;
+    padding: 15px 40px;
+    border-radius: 15px;
+    text-transform: capitalize;
+    i {
+      margin-left: 5px;
+    }
+  }
+}
+
+main .doctors-content {
+  .row {
+    width: 90%;
+    margin: 60px 100px;
+
+    .card {
+      padding: 10px;
+      margin: 10px auto;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0 4px 8px 0 rgba(0, 172, 193, 0.4);
+      transition: 0.3s;
+
+      &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 77, 131, 0.7);
+        animation: heartbeat 2s both ease-in-out;
+      }
+    }
+    .card-img {
+      width: 80%;
+      height: 30%;
+      border-radius: 50%;
+      border: 2px solid $primarycolor;
+      margin: auto;
+      outline: none;
+    }
+    .card-body {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      a.btn {
+        text-decoration: none;
+        width: 95%;
+        background: rgb(0, 172, 193);
+        background: linear-gradient(
+          90deg,
+          rgba(0, 172, 193, 1) 0%,
+          rgba(0, 77, 131, 1) 100%
+        );
+        color: $fourthcolor;
+        font-family: "bold";
+        font-size: 16px;
+        padding: 10px 22px;
+        border-radius: 30px;
+        text-transform: capitalize;
+        outline: none;
+        border: none;
+      }
+
+      h2.card-title {
+        margin: 20px auto 10px auto;
+        font-size: 22px;
+        text-transform: capitalize;
+        color: $thirdcolor;
+        font-family: "semibold";
+      }
+      h3.card-title {
+        margin: 10px auto;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $primarycolor;
+        font-family: "semibold";
+      }
+
+      p.card-text {
+        margin: 10px auto;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: $thirdcolor;
+        font-family: "regular";
+      }
+    }
+  }
+}
+
+/*Add Doctor page*/
+.add-doctor-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(0, 172, 193);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 172, 193, 1) 0%,
+    rgba(0, 77, 131, 1) 100%
+  );
+  animation: color-change-2x 10s both infinite ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  form {
+    position: relative;
+    width: 40%;
+    padding: 50px;
+    margin-top: 80px;
+    background: url(../Images/healthcare.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    animation: heartbeat 1s both ease-in-out;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: rgba(255, 255, 255, 0.9);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      border-radius: 20px;
+    }
+    h2 {
+      font-size: 28px;
+      font-family: "regular";
+      color: $thirdcolor;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+      text-align: center;
+
+      span {
+        color: $primarycolor;
+        font-family: "semibold";
+      }
+    }
+    input,
+    select {
+      width: 90%;
+      border: none;
+      margin: 20px auto;
+      border-bottom: 1px solid $primarycolor;
+      outline: none;
+      background: none;
+    }
+    input[type="submit"] {
+      width: 50%;
+      text-align: center;
+      margin: 30px auto;
+      background: rgb(0, 172, 193);
+
+      color: $fourthcolor;
+      font-family: "bold";
+      font-size: 22px;
+      padding: 10px 35px;
+      border-radius: 35px;
+      text-transform: capitalize;
+      cursor: pointer;
+    }
+  }
+}
+
+/* Departments*/
+header .departments-container {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  background: url(../Images/dep_bg.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "bold";
+    color: $fourthcolor;
+    text-transform: capitalize;
+    font-family: "bold";
+    margin-top: 20px;
+    z-index: 1;
+  }
+}
+main .dep-content {
+  .departments {
+    .row {
+      width: 90%;
+      margin: auto;
+      .card {
+        width: 70%;
+        padding: 10px;
+        margin: 40px auto;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 30px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 0 rgba(0, 172, 193, 0.4);
+        transition: 0.3s;
+
+        &:hover {
+          box-shadow: 0 8px 16px 0 rgba(0, 77, 131, 0.7);
+        }
+
+        .card-img i {
+          font-size: 70px;
+          margin: 15px;
+          /* Set the background color */
+          background: linear-gradient(
+            to top,
+            $sixthcolor 0%,
+            $primarycolor 50%,
+            $secondcolor 100%
+          );
+          /* Mask the color to the text, and remove the rest  */
+          -webkit-background-clip: text;
+          /* Make the text fill color value transparent so the masked background color comes through */
+          -webkit-text-fill-color: transparent;
+          &:hover {
+            animation: heartbeat 2s both ease-in-out;
+          }
+        }
+        .card-body {
+          width: 98%;
+          display: flex;
+          flex-direction: column;
+
+          h2.card-title {
+            font-size: 30px;
+            text-transform: uppercase;
+            /* Set the background color */
+            background: linear-gradient(
+              to left,
+              $sixthcolor 0%,
+              $primarycolor 50%,
+              $secondcolor 100%
+            );
+            /* Mask the color to the text, and remove the rest  */
+            -webkit-background-clip: text;
+            /* Make the text fill color value transparent so the masked background color comes through */
+            -webkit-text-fill-color: transparent;
+            font-family: "semibold";
+          }
+          p.card-text {
+            margin: 10px auto;
+            font-size: 14px;
+            text-transform: lowercase;
+            color: $fifthcolor;
+            font-family: "regular";
+
+            &::first-letter {
+              text-transform: capitalize;
+            }
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 30px;
+            list-style: none;
+            text-transform: capitalize;
+            li {
+              font-size: 15px;
+              font-family: "regular";
+              color: $thirdcolor;
+              margin-bottom: 10px;
+              &:before {
+                content: "\f00c"; /* FontAwesome Unicode */
+                font-family: FontAwesome;
+                color: $primarycolor;
+                display: inline-block;
+                margin-left: -1.3em; /* same as padding-left set on li */
+                width: 1.3em; /* same as padding-left set on li */
+              }
+            }
+          }
+          a.btn {
+            text-decoration: none;
+            width: 60%;
+            margin: 10px auto;
+            text-align: center;
+            background: rgb(0, 172, 193);
+            background: linear-gradient(
+              90deg,
+              rgba(0, 172, 193, 1) 0%,
+              rgba(0, 77, 131, 1) 100%
+            );
+            color: $fourthcolor;
+            font-family: "bold";
+            font-size: 16px;
+            padding: 10px 22px;
+            border-radius: 30px;
+            text-transform: capitalize;
+            outline: none;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .staff {
+    background-color: $sixthcolor;
+    padding: 30px;
+    .row {
+      width: 90%;
+      margin: auto;
+      .col-lg-6,
+      .col-md-12,
+      .col-12 .statistics {
+        margin: 20px auto;
+        .col-lg-4,
+        .col-md-6,
+        .col-12 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h3 {
+            text-transform: capitalize;
+            font-size: 30px;
+            font-family: "semibold";
+            color: $thirdcolor;
+          }
+          span {
+            text-transform: capitalize;
+            font-size: 30px;
+            font-family: "regular";
+            color: $primarycolor;
+          }
+        }
+      }
+      p {
+        width: 95%;
+        margin: 20px;
+        color: $thirdcolor;
+        text-transform: lowercase;
+        font-family: "regular";
+        line-height: 25px;
+        font-size: 15px;
+        text-align-last: initial;
+        &::first-letter {
+          text-transform: capitalize;
+        }
+      }
+      a {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-family: "semibold";
+        font-size: 18px;
+        color: $fourthcolor;
+        background: rgb(0, 172, 193);
+        background: linear-gradient(
+          90deg,
+          rgba(0, 172, 193, 1) 0%,
+          rgba(0, 77, 131, 1) 100%
+        );
+        border-radius: 30px;
+        padding: 12px 32px;
+        margin-left: 20px;
+        line-height: 3.5;
+      }
+    }
+  }
+}
+
+/* About Us */
+header .aboutus-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: url(../Images/aboutus_bg.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "bold";
+    color: $fourthcolor;
+    text-transform: capitalize;
+    font-family: "bold";
+    margin-top: 40px;
+    z-index: 1;
+
+    i {
+      margin-right: 15px;
+    }
+  }
+}
+main .aboutus-container {
+  section.aboutUs {
+    .row {
+      width: 90%;
+      margin: 50px auto;
+
+      .col-lg-6,
+      .col-md-12,
+      .col-12 {
+        .doc-imgs {
+          width: 90%;
+          margin: 40px auto 0px auto;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          align-content: center;
+          .img1,
+          .img2 {
+            border: 15px solid $primarycolor;
+          }
+
+          img.img1 {
+            position: relative;
+            width: 70%;
+            height: 100%;
+          }
+          img.img2 {
+            position: relative;
+            width: 58%;
+            height: 58%;
+            transform: translate(-40%, 27%);
+          }
+          i {
+            color: $primarycolor;
+            font-size: 55px;
+            background-color: $fourthcolor;
+            padding: 40px;
+            border-radius: 50%;
+            transform: translate(135%, 90%);
+            position: absolute;
+            z-index: 2;
+          }
+        }
+      }
+      .col-lg-6,
+      .col-md-12,
+      .col-12 {
+        .details {
+          width: 90%;
+          margin: 40px auto;
+
+          h3 {
+            font-family: "semibold";
+            font-size: 26px;
+            text-transform: capitalize;
+            color: $primarycolor;
+          }
+          p.description {
+            font-family: "regular";
+            color: $fifthcolor;
+            margin-bottom: 15px;
+            position: relative;
+            &::first-letter {
+              text-transform: capitalize;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 90%;
+              height: 0.5px;
+              margin: auto;
+              background: $sixthcolor;
+              bottom: -15px;
+            }
+          }
+          p.title {
+            text-transform: capitalize;
+            margin: 15px auto;
+            color: $thirdcolor;
+            font-size: 30px;
+            font-family: "bold";
+          }
+          h2 {
+            font-family: "semibold";
+            font-size: 24px;
+            text-transform: capitalize;
+            color: $thirdcolor;
+            margin-top: 30px;
+          }
+          ul {
+            display: flex;
+            margin: 15px auto;
+            flex-direction: column;
+            list-style: none;
+            text-transform: capitalize;
+            li {
+              font-size: 15px;
+              font-family: "bold";
+              color: $fifthcolor;
+              margin-bottom: 10px;
+              &:before {
+                content: "\f00c"; /* FontAwesome Unicode */
+                font-family: FontAwesome;
+                color: $primarycolor;
+                display: inline-block;
+                margin-left: -1.3em; /* same as padding-left set on li */
+                width: 1.3em; /* same as padding-left set on li */
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  section.cards {
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid $primarycolor;
+
+      i {
+        font-size: 55px;
+        color: $primarycolor;
+        margin: 15px auto;
+      }
+      h5.card-title {
+        font-family: "semibold";
+        font-size: 25px;
+        text-transform: capitalize;
+        background: linear-gradient(
+          to left,
+          $sixthcolor 0%,
+          $primarycolor 50%,
+          $secondcolor 100%
+        );
+        /* Mask the color to the text, and remove the rest  */
+        -webkit-background-clip: text;
+        /* Make the text fill color value transparent so the masked background color comes through */
+        -webkit-text-fill-color: transparent;
+      }
+
+      p {
+        font-family: "regular";
+        color: $thirdcolor;
+        font-size: 15px;
+        line-height: 25px;
+      }
+      a.btn {
+        text-transform: capitalize;
+        text-decoration: none;
+        font: 15px "semibold";
+        color: $primarycolor;
+        border: 1px solid $primarycolor;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin: 10px;
+        &:hover {
+          color: $fourthcolor;
+          background-color: $primarycolor;
+        }
+      }
+      .card-text {
+        font-family: "regular";
+        margin: 20px auto;
+        color: $thirdcolor;
+
+        .row {
+          .col-lg-6,
+          .col-12 {
+            padding: 0px;
+            margin: 10px auto;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            h4 {
+              font-family: "semibold";
+              font-size: 15px;
+              color: $thirdcolor;
+            }
+            h5,
+            span {
+              font-family: "regular";
+              font-size: 15px;
+              color: $thirdcolor;
+            }
+            span {
+              background: $primarycolor;
+              color: $fourthcolor;
+              padding: 8px 10px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  section.deps {
+    margin: 100px auto;
+    background: url(../Images/pattern.png) no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    background-position-y: -30px;
+
+    h1.dep {
+      color: $primarycolor;
+      font-family: "bold";
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 10px auto;
+    }
+    h2.dep {
+      color: $thirdcolor;
+      font-family: "bold";
+      font-size: 45px;
+      text-transform: capitalize;
+      text-align: center;
+      margin: 20px auto 50px auto;
+    }
+  }
+}

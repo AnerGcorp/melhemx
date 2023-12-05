@@ -1,0 +1,212 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="aboutus-container">
+    <section class="aboutUs">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+                <div class="doc-imgs">
+                    <i class="fas fa-heartbeat"></i>
+                    <img src="{{ url_for('static', filename='Images/idoctor.jpg')}}" alt="doctor1" class="img1">
+                    <img src="{{ url_for('static', filename='Images/teledoctor.jpg')}}" alt="doctor2" class="img2">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12">
+                <div class="details">
+                    <h3>Biz Barada</h3>
+                    <p class="title">Sanly Lukmançylyk Ulgamy</p>
+                    <p class="description">Halkyň Arkadagly zamanasynda 
+                        Hormatly Prezidentimiziň taýsyz tagallasy netijesinde ýurdumyzyň saglyk pudagynda örän möhüm
+                        işler alnyp barylýar. Ýurdumyzyň ähli künjinde döwrebap hassahanalaryň, saglyk öýleriniň gurulyp,  
+                        dünýäniň iň ýokary hilli enjamlarynyň ornaşdyrylmagy, ilaty saglyk taýdan ähli derman serişdeleri
+                        bilen üpjün edilmegi, aýratynam saglyk pudagynyň işlerini sanly ulgam arkaly halka elýeterli etmek
+                        üçin gije-gündiz zähmet çekmegi munuň aýdyň mysalydyr. Biz ýaşlar hem Hormatly Arkadagymyzy özümize
+                        görelde edinip sanly ulgamyň elýeterli hyzmatlaryny saglyk pudagyna ornaşdyrmagy özümize maksat 
+                        edindik we "Melhem" atly programma üpjünçiligini döretdik.</p>
+                    <!-- <h2>Emergency care</h2>
+                    <ul>
+                        <li>primary care</li>
+                        <li>medicine</li>
+                        <li>orthopedic</li>
+                        <li>cardiology</li>
+                    </ul> -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="card" style="width: 24rem;">
+            <i class="fas fa-ambulance"></i>
+            <div class="card-body">
+                <h5 class="card-title">Gaýragoýulmasyz kömek</h5>
+                <p class="card-text">Sistemadaky doktorlar bilen günüň islendik wagtynda kömek soramak, ýardam almak</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+        </div>
+        <div class="card opening-hours" style="width: 24rem;">
+            <i class="far fa-clock"></i>
+            <div class="card-body">
+                <h5 class="card-title">Iş wagty</h5>
+                <div class="card-text">
+                    <span style="font-weight: bold; font-size: 36px;">7/24</span>
+                    <!-- <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <h4>Mon - Tue :</h4>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <h5>8:00 - 17:30</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <h4>Wed - Thu :</h4>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <h5>9:00 - 16:45</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <h4>Sun :</h4>
+                        </div>
+                        <div class="col-lg-6 col-12"><span>closed</span></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 24rem;">
+            <i class="fas fa-hand-holding-medical"></i>
+            <div class="card-body">
+                <h5 class="card-title">Onlaýn doktoryňyz</h5>
+                <p class="card-text"> Saglyk ýagdaýyňyzy bilmek we doktorlardan maslahat almak.</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+        </div>
+    </section>
+    <!-- <section class="deps">
+        <h1 class="dep">Departments</h1>
+        <h2 class="dep">Centers of excellence</h2>
+        <div class="dep-content">
+            <section class="departments">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="card" style="width: 32rem;">
+                            <div class="card-img"><i class="fas fa-bone"></i></div>
+                            <div class="card-body">
+                                <h2 class="card-title">orthopaedics</h2>
+                                <p class="card-text">Because yet mistake feeling has men. Consulted disposing to
+                                    moonlights. Engage piqued in on coming.</p>
+                                <ul>
+                                    <li>Joints</li>
+                                    <li>Sports Medicine</li>
+                                    <li>Spinal Fusion</li>
+                                    <li>Spine</li>
+                                    <li>Bones</li>
+                                </ul>
+                                <a href="index.html" class="btn">get appoinment</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="card" style="width:32rem;">
+                            <div class="card-img"><i class="fas fa-allergies"></i></div>
+                            <div class="card-body">
+                                <h2 class="card-title">Dermatology</h2>
+                                <p class="card-text">Because yet mistake feeling has men. Consulted disposing to
+                                    moonlights. Engage piqued in on coming.</p>
+                                <ul>
+                                    <li>Pediatric</li>
+                                    <li>Cosmetic</li>
+                                    <li>Olio Fusion</li>
+                                    <li>Immunodermatologists</li>
+                                    <li>Dermatopathologists</li>
+                                </ul>
+                                <a href="index.html" class="btn">get appoinment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="card" style="width:32rem;">
+                            <div class="card-img"><i class="fas fa-syringe"></i></div>
+                            <div class="card-body">
+                                <h2 class="card-title">surgery</h2>
+                                <p class="card-text">Because yet mistake feeling has men. Consulted disposing to
+                                    moonlights. Engage piqued in on coming.</p>
+                                <ul>
+                                    <li>Laparoscopy</li>
+                                    <li>Bronchoscopy</li>
+                                    <li>Spinal Fusion</li>
+                                    <li>Endoscopy</li>
+                                    <li>Laser Surgery</li>
+                                </ul>
+                                <a href="index.html" class="btn">get appoinment</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-6 col-md-12 col-12">
+                        <div class="card" style="width:32rem;">
+                            <div class="card-img"><i class="fas fa-viruses"></i></div>
+                            <div class="card-body">
+                                <h2 class="card-title">Corona checkup</h2>
+                                <p class="card-text">Because yet mistake feeling has men. Consulted disposing to
+                                    moonlights. Engage piqued in on coming.</p>
+                                <ul>
+                                    <li>Rapid Diagnostic</li>
+                                    <li>Risks</li>
+                                    <li>Diagnostic Testing</li>
+                                    <li>Viral Culturing</li>
+                                    <li>Antibody</li>
+                                </ul>
+                                <a href="index.html" class="btn">get appoinment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section> -->
+    <!-- <section class="doctors">
+        <h1>doctors</h1>
+        <h2>our expertes</h2>
+        <div class="doctors-content">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card" style="width:18rem;">
+                        <img src="Images/doctor1_img.jpg" class="card-img" alt="doctor photo">
+                        <div class="card-body">
+                            <a href="index.html" class="btn">get appoinment</a>
+                            <h2 class="card-title">Dr. Jessica Jones</h2>
+                            <h3 class="card-title">CARDIOLOGIST</h3>
+                            <p class="card-text">Consultation - (012)3456789</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Images/doctor2_img.jpg" class="card-img" alt="doctor photo">
+                        <div class="card-body">
+                            <a href="index.html" class="btn">get appoinment</a>
+                            <h2 class="card-title">Prof. Ahel Natasha</h2>
+                            <h3 class="card-title">DENTAL SURGEON</h3>
+                            <p class="card-text">Consultation - (066)3456789</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Images/doctor3_img.jpg" class="card-img" alt="doctor photo">
+                        <div class="card-body">
+                            <a href="index.html" class="btn">get appoinment</a>
+                            <h2 class="card-title">dr.Gabriela Beckett</h2>
+                            <h3 class="card-title">COSMETIC SURGEON</h3>
+                            <p class="card-text">Consultation - (058)3456789</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+{% endblock %}

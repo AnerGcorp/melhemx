@@ -1,0 +1,412 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "regular";
+  src: url(../Fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "semibold";
+  src: url(../Fonts/Inter-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "bold";
+  src: url(../Fonts/Inter-Bold.ttf);
+}
+
+/* for the background of home page */
+@-webkit-keyframes bg-pan-bottom {
+  0% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+@keyframes bg-pan-bottom {
+  0% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation color-change-2x
+ * for contact us background
+ * ----------------------------------------
+ */
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #00acc1;
+  }
+  100% {
+    background: #004d83;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #00acc1;
+  }
+  100% {
+    background: #004d83;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * for doctors' card and icons in department card
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+/* navbar */
+nav {
+  width: 90%;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  position: fixed;
+  overflow: hidden;
+  transition: 1s;
+  padding: 10px 20px;
+  background: #00acc1;
+  z-index: 999;
+
+  ul {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 10px 15px;
+
+    li {
+      margin: 0px 15px;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-family: "regular";
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        &:hover {
+          color: #004d83;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      button {
+        font-size: 15px;
+        font-family: "bold";
+        color: white;
+        text-transform: capitalize;
+        background: none;
+        border: 2px solid white;
+        border-radius: 8px;
+        padding: 5px 20px;
+        margin: 10px;
+        outline: none;
+        &:hover {
+          background-color: white;
+          color: #00acc1;
+        }
+      }
+    }
+  }
+}
+
+/* footer*/
+footer .container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../Images/footer-bg.png);
+  background-size: cover;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #004d83;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 50px;
+
+    section {
+      width: 70%;
+      flex-direction: column;
+
+      h2 {
+        font-size: 25px;
+        font-family: "semibold";
+        text-transform: capitalize;
+        color: white;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 20%;
+          bottom: -15px;
+          left: 0;
+          height: 2px;
+          background: #00acc1;
+        }
+      }
+
+      ul {
+        list-style: none;
+        margin: 30px auto;
+        padding: 0px;
+
+        li {
+          margin: 20px auto;
+
+          a {
+            text-transform: capitalize;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: "regular";
+            color: white;
+
+            &:hover {
+              color: #00acc1;
+            }
+          }
+        }
+      }
+
+      p {
+        width: 80%;
+        font-family: "regular";
+        font-size: 17px;
+        color: white;
+      }
+
+      .details {
+        margin-top: 30px;
+        margin-bottom: 50px;
+      }
+
+      h3 {
+        font-family: "semibold";
+        font-size: 18px;
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 16px;
+        text-transform: capitalize;
+      }
+
+      .blood-btn {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-family: "regular";
+        background-color: #00acc1;
+        padding: 15px 30px;
+        border-radius: 5px;
+        text-transform: capitalize;
+
+        i {
+          margin-right: 10px;
+        }
+
+        &:hover {
+          color: #00acc1;
+          background-color: white;
+        }
+      }
+
+      .contacts {
+        margin-top: 50px;
+
+        span {
+          color: white;
+          font-size: 20px;
+          font-family: "bold";
+          text-transform: capitalize;
+          margin-right: 15px;
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+
+          i {
+            font-size: 19px;
+            margin-right: 15px;
+          }
+
+          &:hover {
+            color: #00acc1;
+          }
+        }
+      }
+    }
+  }
+
+  .copywrite {
+    padding-top: 80px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      height: 1px;
+      background-color: white;
+    }
+
+    section {
+      width: 90%;
+      margin: auto;
+
+      p {
+        color: white;
+        font-family: "regular";
+        font-size: 15px;
+
+        span {
+          font-family: "bold";
+          text-transform: capitalize;
+        }
+      }
+
+      ul {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+
+        li {
+          a {
+            text-decoration: none;
+            text-transform: capitalize;
+            color: white;
+            font-family: "regular";
+            font-size: 15px;
+
+            &:hover {
+              color: #00acc1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+$primarycolor: #00acc1;
+$secondcolor: #004d83;
+$thirdcolor: #000;
+$fourthcolor: #fff;
+$fifthcolor: #817e7e;
+$sixthcolor: #c2eefa;

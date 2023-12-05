@@ -1,0 +1,92 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<div class="card card-body illness-card-header login-container">
+    <form class="form-horizontal" style="width: 170vh !important;" action="{{ url_for('predictPage') }}" method="POST">
+        <h1 style="color: #fff; font-weight: bold;">Ýürek Keseli</h1>
+        <h2 style="color: #fff; font-weight: bold;">Anyklaýjy</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control illness-input" style="width: 80vh !important" type="text" name="age" placeholder="Age (in years)">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control illness-input" style="width: 80vh !important" type="text" name="sex" placeholder="Sex (1 = Male; 0 = Female)">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control illness-input" style="width: 80vh !important" type="text" name="cp" placeholder="Chest Pain Type"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control illness-input" style="width: 80vh !important" type="text" name="trestbps" placeholder="Resting Blood Pressure (in mm Hg)">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control illness-input" style="width: 80vh !important" type="text" name="chol" placeholder="Serum Cholesterol (in mg/dl)">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control illness-input" style="width: 80vh !important" type="text" name="fbs" placeholder="Fasting Blood Sugar > 120 mg/dl (1 = True; 0 = False)">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control illness-input" style="width: 80vh !important" type="text" name="restecg" placeholder="Resting Electrocardiograph Results">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control illness-input" style="width: 80vh !important" type="text" name="thalach" placeholder="Maximum Heart Rate Achieved">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control illness-input" style="width: 80vh !important" type="text" name="exang" placeholder="Exercise Induced Angina (1 = Yes; 0 = No)">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control illness-input" style="width: 80vh !important" type="text" name="oldpeak" placeholder="ST Depression Induced by Exercise Relative to Rest">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control illness-input" style="width: 80vh !important" type="text" name="slope" placeholder="The Slope of the Peak Exercise ST Segment">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control illness-input" style="width: 80vh !important" type="text" name="ca" placeholder="Number of Major Vessels (0-3) Colored by Fluoroscopy">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- <div class="col-md-2"></div> -->
+            <div class="col-md-8">
+                <div class="form-group">
+                    <input class="form-control illness-input" style="width: 80vh !important" type="text" name="thal" placeholder="Thal: 1 = Normal; 2 = Fixed Defect; 3 = Reversible Defect">
+                </div>
+            </div>
+            <!-- <div class="col-md-2"></div> -->
+        </div>
+        <input style="background-color: #00acc1; color: #fff; font-weight: bold;" type="submit" class="btn btn-info btn-block" value="Barlagdan geçiň">
+    </form>
+</div>
+
+{% endblock %}

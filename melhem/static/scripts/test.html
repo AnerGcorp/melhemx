@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1> This is a test </h1>
+        <p class="test1" id="demo1"> 1 </p>
+        <p class="test2" id="demo2"> 2 </p>
+        <p class="test3" id="demo3"> 3 </p>
+    </body>
+    <script>
+
+        msg = 
+        {   
+            0: "",
+            1: { sender: "test", content: "hello baby", room: "Atajanow_test" },
+            2: { sender: "Atajanow", content: "hi nigga", room: "Atajanow_test" }, 
+            3: { sender: "Atajanow", content: "i don't know what is going on", room: "Atajanow_test" },
+            4: { sender: "test", content: "hich onemli degil", room: "Atajanow_test" },
+            5: { sender: "Atajanow", content: "duyamadin", room: "Atajanow_test" },
+            6: { sender: "Atajanow", content: "gozlerin kor dilin soylemez oldu", room: "Atajanow_test" },
+            7: { sender: "test", content: "bana ne", room: "Atajanow_test" },
+            8: { sender: "test", content: "sana ne", room: "Atajanow_test" },
+            9: { sender: "Atajanow", content: "hey niggas", room: "Atajanow_test" },
+            10: { sender: "Atajanow", content: "how are your", room: "Atajanow_test" },
+        };        
+    
+    // let lastItem = Object.keys(msg).pop();
+    // document.getElementById('demo1').innerHTML = msg[lastItem]['content'];
+    
+    const date = new Date();
+
+    const dateOptions = {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+    };
+    const timeOptions = {
+        hour12: false,
+        hour: 'numeric',
+        minute: '2-digit',
+        second: '2-digit',
+    };
+
+    const options = {
+        ...timeOptions, ... dateOptions
+    };
+
+    let timestamp = date.toLocaleString('en-US', options); // length 41
+    const lenTime = timestamp.length;
+
+    // console.log(timestamp.slice(lenTime-8, lenTime-3));
+
+    let st = "C:\\fakepath\\DSC09956.JPG";
+    let index = st.lastIndexOf("\\");
+    let str = st.slice(index+1, st.length);
+    console.log(str);
+    
+    </script>
+</html>

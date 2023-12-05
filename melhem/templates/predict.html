@@ -1,0 +1,182 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% if pred == 1 %}
+<div class="login-container" style="height: 100% !important;">
+{% else %}
+<div class="login-container" style="height: 100vh !important;">
+{% endif %}
+    <div class="row" style="margin-top: 15vh !important;">
+        <div class="col-md-3"></div>
+            <div class="col-md-6">
+               <div class="card card-body"  style="background-color: #00acc1;">
+                    <h1 style="color: white; text-align: center;">{{ illness_name }} analiziniň Netijesi</h1>
+                    {% if pred == 1 %}
+                    <h2 class="ill card card-body" > Sistema ulanyjyda 88% ähtimallyk bilen {{ illness_name }} 
+                        bardygyny aýtýar. </h2>
+                    <br/>
+                    <br/>
+                    <h2 class="recommendation">
+                        Hormatly Arkadagymyzyň Türkmenistanyň Dermanlyk Ösümlikleri kitabyndan.
+                    </h2>
+                    <!-- Here comes pharmacy plants -->
+                    {% for plant in plants %}                   
+                    <!-- Illness names -->
+                    {% if func_name == 'diabetes' %}
+                        {% if "diabetes" in plant.tags %}
+                        <div class="row" style="color: #fff">
+                            <h3 style="text-align: center; color: #fff;">{{ plant.name }}</h3>
+                            <div class="col-4 ml-4">
+                                <img src="{{url_for('static', filename='{}'.format(plant.image))}}" alt=""
+                                width="210"
+                                height="240" 
+                                style="margin-top: 7vh;">
+                            </div>
+                            <div class="col-8">
+                                <h4>Peýdalanyşy</h4>
+                                <p style="text-align: justify;">{{plant.usage}}</p>
+                                <h4>Derman taýýarlanyşy we ulanyşy</h4>
+                                <p style="text-align: justify;">{{plant.preparation}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                    {% elif func_name == 'breast_cancer' %}
+                        {% if "cancer" in plant.tags %}
+                        <div class="row" style="color: #fff">
+                            <h3 style="text-align: center; color: #fff;">{{ plant.name }}</h3>
+                            <div class="col-4 ml-4">
+                                <img src="{{url_for('static', filename='{}'.format(plant.image))}}" alt=""
+                                width="210"
+                                height="240" 
+                                style="margin-top: 7vh;">
+                            </div>
+                            <div class="col-8">
+                                <h4>Peýdalanyşy</h4>
+                                <p style="text-align: justify;">{{plant.usage}}</p>
+                                <h4>Derman taýýarlanyşy we ulanyşy</h4>
+                                <p style="text-align: justify;">{{plant.preparation}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                    {% elif func_name == 'heart' %}
+                        {% if "heart" in plant.tags %}
+                        <div class="row" style="color: #fff">
+                            <h3 style="text-align: center; color: #fff;">{{ plant.name }}</h3>
+                            <div class="col-4 ml-4">
+                                <img src="{{url_for('static', filename='{}'.format(plant.image))}}" alt=""
+                                width="210"
+                                height="240" 
+                                style="margin-top: 7vh;">
+                            </div>
+                            <div class="col-8">
+                                <h4>Peýdalanyşy</h4>
+                                <p style="text-align: justify;">{{plant.usage}}</p>
+                                <h4>Derman taýýarlanyşy we ulanyşy</h4>
+                                <p style="text-align: justify;">{{plant.preparation}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                    {% elif func_name == 'kidney' %}
+                        {% if "kidney" in plant.tags %}
+                        <div class="row" style="color: #fff">
+                            <h3 style="text-align: center; color: #fff;">{{ plant.name }}</h3>
+                            <div class="col-4 ml-4">
+                                <img src="{{url_for('static', filename='{}'.format(plant.image))}}" alt=""
+                                width="210"
+                                height="240" 
+                                style="margin-top: 7vh;">
+                            </div>
+                            <div class="col-8">
+                                <h4>Peýdalanyşy</h4>
+                                <p style="text-align: justify;">{{plant.usage}}</p>
+                                <h4>Derman taýýarlanyşy we ulanyşy</h4>
+                                <p style="text-align: justify;">{{plant.preparation}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                    {% elif func_name == 'liver' %}
+                        {% if "liver" in plant.tags %}
+                        <div class="row" style="color: #fff">
+                            <h3 style="text-align: center; color: #fff;">{{ plant.name }}</h3>
+                            <div class="col-4 ml-4">
+                                <img src="{{url_for('static', filename='{}'.format(plant.image))}}" alt=""
+                                width="210"
+                                height="240" 
+                                style="margin-top: 7vh;">
+                            </div>
+                            <div class="col-8">
+                                <h4>Peýdalanyşy</h4>
+                                <p style="text-align: justify;">{{plant.usage}}</p>
+                                <h4>Derman taýýarlanyşy we ulanyşy</h4>
+                                <p style="text-align: justify;">{{plant.preparation}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                    {% endif %}
+                    {% endfor %}
+                    <!-- Illness names end -->
+
+                    <!-- Illness names -->
+                    {% if func_name == 'diabetes' %}
+                        <div class="card card-header d-flex m-0">
+                            <a href="{{url_for('diabetes')}}" class="btn btn-info m-1">Täzeden barlagdan geçiň</a>
+                            <a href="{{ url_for('chats') }}" class="btn btn-info m-1">Lukmanlaryň maslahatyn diňläň...</a>
+                        </div>
+                    {% elif func_name == 'breast_cancer' %}
+                        <div class="card card-header d-flex m-0">
+                            <a href="{{url_for('breast_cancer')}}" class="btn btn-info m-1">Täzeden barlagdan geçiň</a>
+                            <a href="{{ url_for('chats') }}" class="btn btn-info m-1">Lukmanlaryň maslahatyn diňläň...</a>
+                        </div>
+                    {% elif func_name == 'heart' %}
+                        <div class="card card-header d-flex m-0">
+                            <a href="{{url_for('heart')}}" class="btn btn-info m-1">Täzeden barlagdan geçiň</a>
+                            <a href="{{ url_for('chats') }}" class="btn btn-info m-1">Lukmanlaryň maslahatyn diňläň...</a>
+                        </div>
+                    {% elif func_name == 'kidney' %}
+                        <div class="card card-header d-flex m-0">
+                            <a href="{{url_for('kidney')}}" class="btn btn-info m-1">Täzeden barlagdan geçiň</a>
+                            <a href="{{ url_for('chats') }}" class="btn btn-info m-1">Lukmanlaryň maslahatyn diňläň...</a>
+                        </div>
+                    {% elif func_name == 'liver' %}
+                        <div class="card card-header d-flex m-0">
+                            <a href="{{url_for('liver')}}" class="btn btn-info m-1">Täzeden barlagdan geçiň</a>
+                            <a href="{{ url_for('chats') }}" class="btn btn-info m-1">Lukmanlaryň maslahatyn diňläň...</a>
+                        </div>
+                    {% endif %}
+
+                    {% else %}
+                    <h2 class="not-ill card card-body"> Siz sagdyn !!! </h2>
+                    <img src="{{url_for('static', filename='Images/doctor3_img.jpg')}}" alt="" class="card">
+                    {% if func_name == 'diabetes' %}
+                        <div class="card card-header d-flex m-0">
+                            <a href="{{url_for('diabetes')}}" class="btn btn-info m-1">Täzeden barlagdan geçiň</a>
+                            <a href="{{ url_for('chats') }}" class="btn btn-info m-1">Lukmanlardan maslahat almak...</a>
+                        </div>
+                    {% elif func_name == 'breast_cancer' %}
+                        <div class="card card-header d-flex m-0">
+                            <a href="{{url_for('breast_cancer')}}" class="btn btn-info m-1">Täzeden barlagdan geçiň</a>
+                            <a href="{{ url_for('chats') }}" class="btn btn-info m-1">Lukmanlardan maslahat almak...</a>
+                        </div>
+                    {% elif func_name == 'heart' %}
+                        <div class="card card-header d-flex m-0">
+                            <a href="{{url_for('heart')}}" class="btn btn-info m-1">Täzeden barlagdan geçiň</a>
+                            <a href="{{ url_for('chats') }}" class="btn btn-info m-1">Lukmanlardan maslahat almak...</a>
+                        </div>
+                    {% elif func_name == 'kidney' %}
+                        <div class="card card-header d-flex m-0">
+                            <a href="{{url_for('kidney')}}" class="btn btn-info m-1">Täzeden barlagdan geçiň</a>
+                            <a href="{{ url_for('chats') }}" class="btn btn-info m-1">Lukmanlardan maslahat almak...</a>
+                        </div>
+                    {% elif func_name == 'liver' %}
+                        <div class="card card-header d-flex m-0">
+                            <a href="{{url_for('liver')}}" class="btn btn-info m-1">Täzeden barlagdan geçiň</a>
+                            <a href="{{ url_for('chats') }}" class="btn btn-info m-1">Lukmanlardan maslahat almak...</a>
+                        </div>
+                    {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

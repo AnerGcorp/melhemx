@@ -1,0 +1,147 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<div class="card card-body illness-card-header login-container" >
+    <form class="form-horizontal" style="width: 190vh !important;" action="{{ url_for('predictPage') }}" method="POST">
+        <h1 style="color: #fff; font-weight: bold;">Kükrek Rak Keseli</h1>
+        <h2 style="color: #fff; font-weight: bold;">Anyklaýjy</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="texture_mean" placeholder="Texture Mean">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="smoothness_mean" placeholder="Smoothness Mean">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="compactness_mean" placeholder="Compactness Mean">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="concave points_mean" placeholder="Concave Points Mean">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="symmetry_mean" placeholder="Symmetry Mean">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="fractal_dimension_mean" placeholder="Fractal Dimension Mean">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="texture_se" placeholder="Texture Standard Error">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="area_se" placeholder="Area Standard Error">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="smoothness_se" placeholder="Smoothness Standard Error">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="compactness_se" placeholder="Compactness Standard Error">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="concavity_se" placeholder="Concavity Standard Error">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="concave points_se" placeholder="Concave Points Standard Error">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="symmetry_se" placeholder="Symmetry Standard Error">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="fractal_dimension_se" placeholder="Fractal Dimension Standard Error">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="texture_worst" placeholder="Texture Worst">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="area_worst" placeholder="Area Worst">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="smoothness_worst" placeholder="Smoothness Worst">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="compactness_worst" placeholder="Compactness Worst">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="concavity_worst" placeholder="Concavity Worst">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="concave points_worst" placeholder="Concave Points Worst">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="symmetry_worst" placeholder="Symmetry Worst">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input style="width: 57vh !important" class="form-control illness-input" type="text" name="fractal_dimension_worst" placeholder="Fractal Dimension Worst">
+                </div>
+            </div>
+            
+        </div>
+
+        <input style="background-color: #00acc1; color: #fff; font-weight: bold;" type="submit" class="btn btn-info btn-block" value="Barlagdan geçiň">
+    </form>
+</div>
+
+{% endblock %}

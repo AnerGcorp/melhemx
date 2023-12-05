@@ -1,0 +1,84 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+<div class="login-container">
+    {% if message %}
+        <div class="alert alert-danger" style="margin-top: 12vh !important;">{{ message }}</div>
+    {% endif %}
+    <div class="row" style="margin-top: 15vh !important;">
+        <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1 style="color:white; text-align: center;">Malariýa Anyklaýjy</h1>
+                <div class="card card-body"  style="background-color: #00acc1;">
+                    <h3 style="text-align: center; color: azure;">Analiziň suratyny şu ýere ýükläň</h3>
+                    <form class="form-horizontal" action="{{ url_for('malariapredictPage') }}" method="POST" enctype="multipart/form-data" 
+                        style="background-color: #0ad2ec; width: 97vh !important; min-height: 80vh !important; margin-top: 0 !important; padding-top: 0 !important;">
+                        <div class="d-flex">
+                        <input 
+                            onchange="readURL(this);" 
+                            id="image-container" 
+                            type="file" 
+                            name="image" 
+                            placeholder="Upload Image"
+                            style="opacity: 0%; display: none;"
+                            >
+                        <input type="text" id="filename" readonly="true"/>
+                        <input 
+                            type="button" 
+                            value="Suraty Saýlaň" 
+                            class="btn btn-primary mx-2" 
+                            id="fakeBrowse"
+                            style="color: black; font-weight: bold;" 
+                            onclick="HandleBrowseClick();"/>
+                        </div>
+                        <br>
+                        <br>
+                        <img class="img-fluid" id="uploaded-image" src="#" alt="Ýüklenen suratlar şu ýerde görkeziler!" 
+                            />
+                            
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <input class="btn btn-primary" style="color: rgb(5, 5, 5); font-weight: bold;" type="submit" value="Ulgama Giriziň">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function readURL(input) {
+        var fileinput = document.getElementById("image-container");
+        var textinput = document.getElementById("filename");
+
+        let st = fileinput.value;
+        let index = st.lastIndexOf("\\");
+        let str = st.slice(index+1, st.length);
+
+        textinput.value = str;
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#uploaded-image')
+                    .attr('src', e.target.result)
+                    .width(500)
+                    .height(500);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+        }
+
+        function HandleBrowseClick()
+        {
+            var fileinput = document.getElementById("image-container");
+            fileinput.click();
+        }
+        
+</script>
+{% endblock %}

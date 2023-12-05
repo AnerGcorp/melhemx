@@ -1,0 +1,146 @@
+{% extends "layout.html" %}
+{% block content %}
+    <main>
+        <section class="doctors">
+            <h1>___________</h1>
+            <h2>Saglygyňyzy barlaň..</h2>
+            <div class="doctors-content">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card" style="width:18rem;">
+                            <img src="{{ url_for('static', filename='Images/covid-19.jpg')}}" class="card-img" alt="doctor photo">
+                            <div class="card-body">
+                                <a href="{{ url_for('covid_19') }}" class="btn">Diagnoz goýuň</a>
+                                <h2 class="card-title">Covid-19</h2>
+                                <h3 class="card-title">Pulmonologiýa</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{ url_for('static', filename='Images/pneumonia.jpg')}}" class="card-img" alt="doctor photo">
+                            <div class="card-body">
+                                <a href="{{ url_for('pneumonia') }}" class="btn">Diagnoz goýuň</a>
+                                <h2 class="card-title">Pneumaniýa</h2>
+                                <h3 class="card-title">Pulmonologiýa</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{ url_for('static', filename='Images/malaria.jpg')}}" class="card-img" alt="doctor photo">
+                            <div class="card-body">
+                                <a href="{{ url_for('malaria') }}" class="btn">Diagnoz goýuň</a>
+                                <h2 class="card-title">Malariýa</h2>
+                                <h3 class="card-title">Ýokanç keseller bölümi</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{ url_for('static', filename='Images/breast-cancer.jpg')}}" class="card-img" alt="doctor photo">
+                            <div class="card-body">
+                                <a href="{{ url_for('breast_cancer') }}" class="btn">Diagnoz goýuň</a>
+                                <h2 class="card-title">Kükrek Rak keseli</h2>
+                                <h3 class="card-title">Onkologik Keseller</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{ url_for('static', filename='Images/diabetes.jpg')}}" class="card-img" alt="doctor photo">
+                            <div class="card-body">
+                                <a href="{{ url_for('diabetes') }}" class="btn">Diagnoz goýuň</a>
+                                <h2 class="card-title">Süýji Keseli</h2>
+                                <h3 class="card-title">Endokrinologiýa</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{ url_for('static', filename='Images/heart.jpg')}}" class="card-img" alt="doctor photo">
+                            <div class="card-body">
+                                <a href="{{ url_for('heart') }}" class="btn">Diagnoz goýuň</a>
+                                <h2 class="card-title">Ýürek Keselleri</h2>
+                                <h3 class="card-title">Ýürek-Damar Keselleri Bölümi</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{ url_for('static', filename='Images/kidney.jpg')}}" class="card-img" alt="doctor photo">
+                            <div class="card-body">
+                                <a href="{{ url_for('kidney') }}" class="btn">Diagnoz goýuň</a>
+                                <h2 class="card-title">Böwrek Keselleri</h2>
+                                <h3 class="card-title">Böwrek-Daş keselleri bölümi</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{ url_for('static', filename='Images/liver.jpg')}}" class="card-img" alt="doctor photo">
+                            <div class="card-body">
+                                <a href="{{ url_for('liver') }}" class="btn">Diagnoz goýuň</a>
+                                <h2 class="card-title">Bagyr Keselleri</h2>
+                                <h3 class="card-title">Hepatalogiýa Bölümi</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{ url_for('static', filename='Images/terapewt.jpg')}}" class="card-img" alt="doctor photo">
+                            <div class="card-body">
+                                <a href="{{ url_for('advice') }}" class="btn">Maslahat Alyň</a>
+                                <h2 class="card-title">Terapewt Lukmany</h2>
+                                <h3 class="card-title">Umumy bejergi</h3>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+            </div>
+        </section>
+
+        <div class="aboutus-container">
+            <section class="aboutUs">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="doc-imgs">
+                            <i class="fas fa-heartbeat"></i>
+                            <img src="{{ url_for('static', filename='Images/teledoctor.jpg')}}" alt="doctor1" class="img1">
+                            <img src="{{ url_for('static', filename='Images/idoctor.jpg')}}" alt="doctor2" class="img2">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="details">
+                            <h3>Biz Barada</h3>
+                            <p class="title">Sanly Lukmançylyk Ulgamy</p>
+                            <p class="description" style="text-align: justify;">Halkyň Arkadagly zamanasynda 
+                                Hormatly Prezidentimiziň taýsyz tagallasy netijesinde ýurdumyzyň saglyk pudagynda örän möhüm
+                                işler alnyp barylýar. Ýurdumyzyň ähli künjinde döwrebap hassahanalaryň, saglyk öýleriniň gurulyp,  
+                                dünýäniň iň ýokary hilli enjamlarynyň ornaşdyrylmagy, ilaty saglyk taýdan ähli derman serişdeleri
+                                bilen üpjün edilmegi, aýratynam saglyk pudagynyň işlerini sanly ulgam arkaly halka elýeterli etmek
+                                üçin gije-gündiz zähmet çekmegi munuň aýdyň mysalydyr. Biz ýaşlar hem Hormatly Arkadagymyzy özümize
+                                görelde edinip sanly ulgamyň elýeterli hyzmatlaryny saglyk pudagyna ornaşdyrmagy özümize maksat 
+                                edindik we "Melhem" atly programma üpjünçiligini döretdik. 
+                            </p>
+                            <h2>Melhem janyňyzyň melhemi.</h2>
+                            <!-- <ul>
+                                <li>primary care</li>
+                                <li>medicine</li>
+                                <li>orthopedic</li>
+                                <li>cardiology</li>
+                            </ul> -->
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        
+        
+    </main>
+
+{% endblock %}

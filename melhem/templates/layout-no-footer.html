@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Söhbetdeşlik</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/bootstrap-chat.min.css')}}" />
+    <!-- template itself imports -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='Fonts/all.min.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='Fonts/fontawesome.min.css') }}" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/Lib/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+    <!-- JQuery Section -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><a href="{{ url_for('home') }}"><img src="{{url_for('static', filename='Images/logo.png')}}" alt="logo"></a></div>
+        <ul class="menu">
+            <li>
+                <a href="{{ url_for('home') }}">Baş Sahypa</a>
+            </li>
+            <li>
+                <a href="{{ url_for('chats') }}">Gürrüňdeşlik</a>
+            </li>
+            <li>
+                <a href="{{ url_for('about')}}">Biz Barada</a>
+            </li>
+        </ul>
+        {% if current_user.is_authenticated %}
+        <div class="buttons">
+            <a href="{{ url_for('logout') }}"><button class="login-btn">Ulgamdan çyk</button></a>
+            <a href="{{ url_for('account') }}"><button class="account-form username" id="my-username">{{ current_user.username }}</button></a>
+        </div>
+        {% else %}
+        <div class="buttons">
+            <a href="{{ url_for('login') }}"><button class="login-btn">Ulgama gir</button></a>
+            <a href="{{ url_for('register') }}"><button class="register-btn">Ýazga alyn</button></a>
+        </div>
+        {% endif%}
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+   
+  <script type="text/javascript" src="{{ url_for('static', filename='js/mdb.min.js')}}"></script>
+</body>

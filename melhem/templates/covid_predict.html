@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="login-container" style="height: 100% !important;">
+    <div class="row" style="margin-top: 15vh !important;">
+        <div class="col-md-3"></div>
+            <div class="col-md-6">
+               <div class="card card-body"  style="background-color: #00acc1;">
+                    <h1 style="color: white; text-align: center;">Covid-19 Ýokanjynyň Analiziniň Netijesi</h1>
+                    {% if pred == 1 %}
+                    <h2 class="ill card card-body" > Sistema ulanyjyda 91% ähtimallyk bilen Covid-19 wirusynyň 
+                        bardygyny aýtýar. </h2>
+                    <br/>
+                    <br/>
+                    <h2 class="recommendation card card-body">
+                        Hormatly Arkadagymyzyň Türkmenistanyň Dermanlyk Ösümlikleri kitabyndan.
+                    </h2>
+                    {% for plant in plants %}                   
+                    {% if "lung" in plant.tags or "covid" in plant.tags %}
+                    <div class="row" style="color: #fff">
+                        <h3 style="text-align: center; color: #fff;">{{ plant.name }}</h3>
+                        <div class="col-4 ml-4">
+                            <img src="{{url_for('static', filename='{}'.format(plant.image))}}" alt=""
+                            width="210"
+                            height="240" 
+                            style="margin-top: 7vh;">
+                        </div>
+                        <div class="col-8">
+                            <h4>Peýdalanyşy</h4>
+                            <p style="text-align: justify;">{{plant.usage}}</p>
+                            <h4>Derman taýýarlanyşy we ulanyşy</h4>
+                            <p style="text-align: justify;">{{plant.preparation}}</p>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+                    <div class="card card-header d-flex m-0">
+                        <a href="{{ url_for('covid_19') }}" class="btn btn-info m-1">Täzeden barlagdan geçiň</a>
+                        <a href="{{ url_for('chats') }}" class="btn btn-info m-1">Lukmanlaryň maslahatyn diňläň...</a>
+                    </div>
+                    {% else %}
+                    <h2 class="not-ill card card-body"> Siz sagdyn !!! </h2>
+                    <img src="{{url_for('static', filename='Images/doctor3_img.jpg')}}" alt="" class="card">
+                    <div class="card card-header d-flex m-0">
+                        <a href="{{ url_for('covid_19') }}" class="btn btn-primary mb-1">Täzeden barlagdan geçiň</a>
+                        <a href="{{ url_for('chats') }}" class="btn btn-primary">Lukmanlardan maslahat almak...</a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

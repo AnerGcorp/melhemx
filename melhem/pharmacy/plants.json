@@ -1,0 +1,77 @@
+{
+    "plants":
+    [
+        {
+            "id": 1,
+            "name": "GULAKLY ARABIS",
+            "image": "pharmacy-img/arabis.jpg",
+            "usage": "Halk lukmançylygynda ösümligi aşgazan-içege we onkologiki kesellerde, dowamly bogun rewmatizminde, kellagyryda peýdalanylýar. Ösümligiň tohumy gyzgyny peseldiji serişde hökmünde ulanylýar. Baharda ösümlikden aşlar we duzly tagamlar taýýarlanylýar.",
+            "preparation": "Ösümligiň 1 çaý çemçe (5 g) guradylyp owradylan otuny 1,5 bulgur (300 ml) gaýnag suwa atyp, sowaýança goýmaly. Soňra süzmeli. Taýýar bolan emlik jöwheri her gün 3 wagtyna nahardan öň 1 nahar çemçeden (15 ml) içmeli.Otjumagyň 1-2 nahar çemçe (15-30 g) gury tohumyny 1 bulgur (200 ml) gaýnag suwa atyp, içi syrçaly gapda pessaý otda 30 minut gaýnatmaly. Sowadyp süzmeli. Emele gelen melhemlik peti gün içinde 3 sapar 1 nahar çemçeden (15 ml) kabul etmeli. Ösümligiň 2 çaý çemçe (10 g) owradylyp toz görnüşine çenli ýetirilen tohumyny 1/2 bulgur (100 rnl) medisina spirtine atyp, agzy ykjam ýapylýan aýna gapda, garaňky ýerde bir hepde goýmaly. Yzygiderli çaýkap durmaly. Soňra hasadan geçirmeli. Taýýar bolan şerbeti günde 3 ýola nahardan ýarym sagat öň 10 damjadan içmeli.",
+            "tags": ["cancer"]
+        },
+        {
+            "id": 2,
+            "name": "GYZGYLT ANIS",
+            "image": "pharmacy-img/anis.jpg",
+            "usage": "Bu ösümlik içdäki agyryny köşeşdirýär, ýellenmäni aýyrýar, aýbaşynyň we süýdüň bol bolmaklygyna täsir edýär, zyýanly zäherleri aýyrýar. Onuň gülünden taýýarlanylan petini göze çalsaň görejiňi ýiteldýär. Öz wagtynda meşhurlyga eýe bolan, Muhammet Hüseýniň «Melhemler hazynasy» atly nusgawy diwanynda ösümlik barada şeýle ýazylýar: «...anis agyryny köşeşdirýär, peşew kowýar, derlediji täsirli, ýüzüň reňkini nurlandyrýar...». Halk lukmançylygynda ösümligiň peti, jöwheri we şerbeti pnewmoniýada, bronhitde, bronh demgysmasynda, laringitde, traheitde, gastritde, böwrek-daş kesellerinde, asitde, gaýtalanyp durýan bognagyryda, enurezda ulanylýar. Türkmen halk lukmançylygynda (Baharly we Gökdepe etraplary) ösümligiň jöwheri ýüzdäki sary reňki aýyrmak Üçin çaga dogran aýallara içirilýär, ýerüsti böleginiň şiresi pigment menekleri bilen üpjün edýär. Anis dem alyş ýollaryny arassalaýar we kükrekdäki yzany aýyrýar. Ylmy lukmançylykda ösümligi respirator kesellerinde gakylyk goparyjy serişde hökmünde ulanmak maslahat berilýär.",
+            "preparation": "Ösümligiň 1 nahar çemçe (15 g) guradylyp owradylan otuny 1 bulgur (200 ml) gaýnag suwa atyp, içi syrçaly gapda pessaý otda 15 minut gaýnatmaly. Hasadan geçirmeli. Taýýar bolan peti her gün 3 gezek 1 çaý çemçeden (5 ml) içmeli. Otjumagyň 1 nahar çemçe (15 g) gury köklerini 1 bulgur (200 ml) gaýnag suwly, içi syrçaly gaba atyp gapagyny ýapmaly we gaýnag suwda (suw hammamynda) 10 minut gaýnatmaly. 30 minutyň dowamynda sowatmaly. Soňra süzmeli. Galan massany sykmaly. Emele gelen pete başlangyç ýagdaýyndaky ýaly suw goşmaly (200 ml). Melhemi gün içinde 3-4 sapar nahardan 30 minut öň 1/4 bulgurdan (50 ml) kabul etmeli.",
+            "tags": ["lung", "kidney"]
+        },
+        {
+            "id": 3,
+            "name": "INÇE GÜLLI BUGRATIKEN",
+            "image": "pharmacy-img/bugratiken.jpg",
+            "usage": "Halk we ylmy lukmançylykda bugratikeniň otunyň peti we jöwheri akarisid (sakyrtganyň garşysyna) serişde hökmünde ulanylýar. Türkmen halk lukmançylygynda bugratikeni dürli deri kesellerinde peýdalanylýar. Ylmy lukmançylykda ösümlikdäki saponinleriň gripiň wirusyna garşy ingibirleýji täsiri ýüze çykaryldy.",
+            "preparation": "Ösümligiň 1 çaý çemçe (5 g) guradylyp owradylan köklerini 1 bulgur (200 ml) gaýnag suwa atyp, içi syrçaly gapda pessaý otda 5-10 minut gaýnatmaly. Otag temperaturasynda sowatmaly. Hasadan geçirmeli. Taýýar bolan peti her gün 3 gezek nahardan öň 1 nahar çemçeden (15 ml) içmeli. Bugratikeniň 1 nahar çemçe (15 g) guradylyp owradylan köklerini 1 bulgur (200 ml) gyzgyn suwa atyp, içi syrçaly gapda haýal ýanýan otda 10-15 minut gaýnatmaly. Soňra süzmeli. Taýýar bolan peti gün içinde 3 sapar 1 çaý çemçeden (5 ml) kabul etmeli, şeýle-de 2 gezek (irden hem agşam) deriniň zeperlenen ýerlerini ýuwmaly. Ösümligiň 1 nahar çemçe (15 g) gury güllerini 1 bulgur (200 ml) gyzgyn suwa atyp, içi syrçaly gapda pessaý otda 10-15 minut gaýnatmaly. Hasadan geçirmeli. Taýýar bolan peti günde 3 ýola 1 çaý çemçeden (5 ml) içmeli, şeýle-de 2 gezek (irden hem agşam) deriniň zeperlenen ýerlerini ýuwmaly.",
+            "tags": ["skin", "malaria"]
+        },
+        {
+            "id": 4,
+            "name": "KELEM GORNUŞLI KERTIKLI",
+            "image": "pharmacy-img/kertikli.jpg",
+            "usage": "Halk lukmançylygynda ösümligiň otunyň jöwheri bokurdak we döş kapasasynyň agzalarynyň kesellerinde; tohumy onkologiki sökelliklerde, bronh demgysmada, gakylyk goparyjy, stimulirleýji we umumy berkidiji serişde hökmünde ulanylýar.",
+            "preparation": "Ösümligiň 1-2 nahar çemçe (15-30 g) gury tohumyny 1 bulgur (200 ml) gaýnag suwuň içine atyp, içi syrçaly gapda haýal ýanýan otda 30 minut gaýnatmaly. Sowadyp, süzmeli. Taýýar bolan peti hergün 3 gezek 1 nahar çemçeden (15 ml) içmeli. Kertikliniň 1 çaý çemçe (5 g) guradylyp owradylan otuny 1,5 bulgur (300 ml) gaýnag suwa atyp goýmaly. $owaýança saklamaly, soňra hasadan geçirmeli. Emele gelen jöwheri gün içinde 3 sapar 1 nahar çemçeden (15 ml) nahardan öň kabul etmeli. Otjumagyň 2 çaý çemçe (10 g) owradylyp, toz görnüşine çenli ýetirilen tohumyny 1/2 bulgur (100 ml) medisina spirtine atyp, agzy ykjam ýapylýan aýna gapda, garaňky ýerde bir hepde goýmaly. Yzygiderli çaýkap durmaly. Soňra süzmeli. Taýýar bolan emlik şerbeti günde 3 wagtyna 10 damjadan nahardan öň içmeli.",
+            "tags": ["cancer", "lung"]
+        },
+        {
+            "id": 5,
+            "name": "KERKAW",
+            "image": "pharmacy-img/kerkaw.jpg",
+            "usage": "Halk we türkmen halk lukmançylygynda (Magtymguly, Baharly we Gökdepe etraplary) kerkawyň ýapraklaryndan taýýarlanylan peti, jöwheri önelgesizlikde, jynsy hyjuwyň peselende, garamükrüde, bagyr sökelliklerinde, peşew hem öt çykaryjy, sowuklamanyň garşysyna, agyryny aýryjy, ýaralary bitiriji serişde hökmünde peýdalanylýar. Miweleriniň melhemliklerini (peti, jöwheri) diareýada, gyzgyny peseldiji hökmünde ulanylýar. Türkmen halkynyň arasynda kerkawa bolan şeýle ynanç ýörgünli. Ol energiýa eçilýän, şähdiňi açýan we keýpiňi çaglaýan ösümlikdir.",
+            "preparation": "Daragtyň 1 nahar çemçe (15 g) täze ýa-da guradylan ýapraklaryny 1 bulgur <200 ml) gaýnag suwa atyp, ýyly ýerde 30 minut goýmaly. Soňra süzmeli. Taýýar bolan jöwheri her gün 3-4 gezek 1/4 bulgurdan (50 ml) içmeli. Kerkawyň 1 nahar çemçe (15 g) gury ýapraklaryny 1 bulgur (200 ml) gaýnag suwa atyp, bir sagat goýmaly. Yzysüre hasadan geçirmeli. Häzir bolan jöwheri gün içinde 3 sapar 2 nahar çemçeden (30 ml) kabul etmeli. Daragtyň 1 nahar çemçe (15 ml) şiresini 1 bulgur (200 ml) gyzgyn süýde guýmaly. Taýýar bolan melhemlik içgini dessine içmeli. Üsgülewige garşy gadymy halk serişdesi.",
+            "tags": ["kidney", "liver", "diabetes"]
+        },
+        {
+            "id": 6,
+            "name": "KEÝIKBURÇA",
+            "image": "pharmacy-img/keyikburcha.jpg",
+            "usage": "Halk lukmançylygynda ösümligiň oty bilen tohumyndan taýýarlanylýan melhemlik peti ýürek-damar ulgamynyň sökelliklerinde, deri kesellerinde, bronh demgysmasynda, ýokarky dem alyş ýollarynyň katarynda peýdalanylýar.",
+            "preparation": "Ösümligiň 1-2 çaý çemçe (5-10 g) gury otuny 1 bulgur (200 ml) gaýnag suwuň içine atyp, içi syrçaly gapda pessaý otda göwrümi iki esse azalýança gaýnatmaly. Soňra süzmeli. Taýýar bolan peti her gün 3 gezek nahardan 30 minut öň 1/2 bulgurdan (100 ml) içmeli. Keýikburçanyn 1 nahar çemçe (15 g) mäjumlanyp, toz görnüşine çenli ýagdaýa getirilen tohumyny 1 bulgur (200 ml) gaýnag suwuň içine atyp, syrçaly pitide haýal ýanýan otda 5-10 minut gaýnatmaly. Yzysüre hasadan geçirmeli. Taýýar bolan peti giin içinde 3-4 sapar nahardan öň 1 çaý çemçeden (5 ml) kabul etmeli. Ösümligiň 1 nahar çentçe (15 g) gury otuny 1 bulgur (200 ml) gaýnag suwuň içine atyp, bir sagat goýmaly. Soňra süzmeli. Taýýar bolan jöwheri günde 3 ýola nahardan 30 minut öň 1 /2 bulgurdan (100 ml) içmeli.",
+            "tags": ["heart", "skin", "lung"]
+        },
+        {
+            "id": 7,
+            "name": "KÖPETDAG SEUDEGI ",
+            "image": "pharmacy-img/seudek.jpg",
+            "usage": "Halk Iukmançylygynda ösümligiň oty ýürek-damar kesellerinde, süýt şiresi aşgazanyň başly sökel likierinde; çalgy dermany deri kesellerinde, hususan-da siňňilde, demrewde, gijilewükde, saçy berkitmekde ulanylýar. Türkmen halk lukmançylygynda (Magtymguly, Baharly we Gökdepe etraplary) ýapraklarynyň peti bilen diş agyryny bejerýärler, süýt şiresini sakyzy bilen garyp, bitmesi kyn ýaralarda peýdalanylýar.",
+            "preparation": "Ösümligiň 1 nahar çemçe (15 g) gury otuny 2 bulgur (400 ml) gaýnag suwuň içine atyp, içi syrçaly gapda haýal ýanýan otda 5 minut gaýnatmaly. Soňra süzmeli. Taýýar bolan peti hergün 3 wagtyna 1 nahar çemçeden (15 ml) içmeli. Seudegiň 1 nahar çemçe (15 g) owradylan täze ýapraklaryny 1 bulgur (200 ml) gaýnag suwuň içine atyp, syrçaly pitide pessaý otda 10 minut gaýnatmaly. Sowadyp, hasadan geçirmeli. Taýýarlanan pet bilen agzyňy çaýkamaly. Ösümligiň 1 çaý çemçe (5 g) süýt şiresini 2 buigur (400 ml) gaýnag suwuň içine guýup, 45-50 minut goýmaly. Yzysüre süzmeli. Taýýar bolan jöwheri günde 3 gezek 1 nahar çemçeden (15 ml) kabul etmeli. Seudegiň süýt şiresini günüň dowamynda 2 sapar (irden hem agşam) deriniň zeperlenen ýerlerine çalmaly.",
+            "tags": ["heart", "skin"]
+        },
+        {
+            "id": 8,
+            "name": "MEÝDAN ANAGALISI",
+            "image": "pharmacy-img/anagal.jpg",
+            "usage": "Halk lukmançylygynda ösümligiň oty öýken inçekeselinde, bronhitlerde, üsgülewükde, bagyr keselinde, sarygetirmede, depressiýada, nerw bozulmalarynda, böwrek we peşew haltasy nyň sökell iklerinde, gakylyk goparyjy we diuretik serişde hökmünde; çalgy dermany bitmesi kyn ýaralarda ulanylýar. Otunyň peti konýunktiwitde, sarygetirmede, ginekologiki we peşew-daş kesellerinde, ingide, üsgülewükde, demigmede, diuretik, umumy berkidiji, tonizirleýji, rahat landyryjy serişde hökmünde peýdalanylýar. Türkmen halk lukmançylygynda (Magtymguly, Baharly, Gökdepe we Köýtendag etraplary) ösümligin otunyň peti inçekeselde, nefritlerde, gepatitde, agyryly dermatozlarda, guduzlan haýwanlar dişlände, täze şiresi depressiýada, nerw bozulmalarynda, fungistatik serişde hökmünde ulanylýar. Ylmy lukmançylykda ösümligiň diuretik häsiýeti, ekstraktynyň abortiw täsiri ýüze çykaryldy.",
+            "preparation": "Ösümligiň gury otuny (1:100) gatnaşygynda gaýnag suwuň içine atyp, içi syrçaly gapda pessaý otda 10—15 minut gaýnatmaly. Otag temperaturasyna çenli sowatmaiy. Soňra süzmeli. Taýýar bolan peti ýapgy we çalgy görn üşinde ulanmaly. Meýdan anagalisiniň 1 çaý çemçe (5 g) guradylyp owradylan otuny 2 bulgur (400 ml) gaýnag suwuň içine atyp, 2 sagat goýmaly. Yzysüre hasadan geçirmeli. Taýýar bolan jöwheri her gün 4sapar 1/4 bulgurdan (50 ml) içmeli. Ösümligiň 4 çaý çemçe (20 g) gury otuny 1 litr gaýnag suwun içine atyp, 2 sagat goýup, sowatmaly, soňra süzmeli. Taýýar bolan jöwheri günde 3 gezek nahardan öň 1 bulgurdan (200 ml) kabul etmeli. Melhemi klizm etmek üçin hem ulansaň bolýar.",
+            "tags": ["lung", "liver", "kidney"]
+        },
+        {
+            "id": 9,
+            "name": "MEÝDAN TORILISI",
+            "image": "pharmacy-img/toril.jpg",
+            "usage": "Halk lukmançylygynda ösümligiň oty we ýaprakiary umumy berkidiji, tonizirleýji serişde hökmünde, ýürek-damar ulgamynyň we dem alyş ýollarynyň kesellerinde ulanylýar.",
+            "preparation": "Ösümligiň 2 çaý çemçe (10 g) gury otuny 1 bulgur (200 ml) gaýnag suwuň içine atyp, içi syrçaly gapda pessaý otda 5 minut gaýnatmaly. 2 sagat goýmaly. Soňra süzmeli. Taýýar bolan peti her gün 3 wagtyna 1/4 buigurdan (50 ml) içmeli. Otjumagyň 2 çaý çemçe (10 g) gury otuny 2 bulgur (400 ml) gaýnag suwuň içine atyp, 8 sagat goýmaly. Yzysüre hasadan geçirmeli. Taýýar bolan jöwheri gün içinde 2-3 ýola nahardan öň 1/2 bulgurdan (100 ml) kabul etmeli.Ösümligiň 1 nahar çemçe (15 g) guradylyp owradylan ýaprakiaryny 0,5 litrlik termosa demlemeli, 6 sagat goýmaly. Hasa bilen süzmeli. Taýýar bolan jöwheri günde 3 gezek 1 /2 bulgurdan (100 ml) içmeli.",
+            "tags": ["heart", "lung"]
+        }
+    ]
+}
