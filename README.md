@@ -80,7 +80,7 @@ Contributions are welcome! Follow these steps:
 2. Create a new branch for your feature or bug fix.
 3. Make changes and commit with descriptive messages.
 4. Push changes to your fork.
-5. Submit a pull request to the `main` branch.
+5. Submit a pull request to the `master` branch.
 
 ## License:
 
